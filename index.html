@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/pet.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador de Pacientes Veterinaria</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-slate-100 font-sans">
+    <h1 class="font-black text-4xl text-center mt-9">Seguimiento Pacientes <span class="text-indigo-700">Veterinaria</span></h1>
+    <main class="mt-10 w-full mx-auto 2xl:flex 2xl:justify-between">
+      <section class="max-w-2xl mx-auto 2xl:flex-1">
+        <header class="flex flex-col items-center gap-2">
+          <h2 class="font-bold text-2xl text-center">Seguimiento Pacientes</h2>
+          <p>Añade Pacientes y <span class="text-indigo-600">Administralos</span></p>
+        </header>
+        <form class="flex flex-col w-full bg-white rounded-md mt-5 py-5" id="form-add-pacient" action="">
+          <div class="flex flex-col gap-2 p-3">
+            <label class="uppercase font-bold" for="name">Nombre Paciente:</label>
+            <input class="border border-solid border-gray-300 p-2 rounded-lg" id="name" type="text" placeholder="Nombre Paciente" name="name">
+          </div>
+          <div class="flex flex-col gap-2 p-3">
+            <label class="uppercase font-bold" for="propietary">Nombre Propietario:</label>
+            <input class="border border-solid border-gray-300 p-2 rounded-lg" id="propietary" type="text" placeholder="Nombre Propietario" name="propietary">
+          </div>
+          <div class="flex flex-col gap-2 p-3">
+            <label class="uppercase font-bold" for="email">Email Contacto:</label>
+            <input class="border border-solid border-gray-300 p-2 rounded-lg" id="email" type="text" placeholder="E-mail Contacto" name="email">
+          </div>
+          <div class="flex flex-col gap-2 p-3">
+            <label class="uppercase font-bold" for="date">Fecha Alta:</label>
+            <input class="border border-solid border-gray-300 p-2 rounded-lg invalid:2px invalid:solid invalid:red valid:2px valid:solid valid:green" id="date" type="date" name="date">
+          </div>
+          <div class="flex flex-col gap-2 p-3">
+            <label class="uppercase font-bold" for="symptoms">Sintomas:</label>
+            <textarea class="border border-solid border-gray-300 p-2 rounded-lg" name="symptoms" id="symptoms" placeholder="Sintomas del Paciente"></textarea>
+          </div>
+          <button class="uppercase text-white font-bold bg-indigo-600 py-2 mx-2 mt-3 rounded-lg hover:opacity-70 transition-all" id="add-pacient-btn" type="submit">Registrar Paciente</button>
+        </form>
+      </section>
+      <section class="max-w-2xl mx-auto">
+        <header class="flex flex-col items-center gap-2">
+          <h2 class="font-bold text-2xl text-center">Listado Pacientes</h2>
+          <p>Administra a tus <span class="text-indigo-600">Pacientes y Citas</span></p>
+        </header>
+        <div class="flex flex-wrap w-full gap-5 justify-center md:justify-between mt-5 py-5 " id="list">
+          
+        </div>
+      </section>
+    </main>
+    <footer class="mb-5 2xl:fixed 2xl:bottom-0 2xl:left-1/2">
+      <p class="text-center font-bold mb-2">Desarrollado por <span class="text-indigo-700">Braian Nuñez</span></p>
+      <nav>
+        <ul class="flex justify-center">
+          <li><a href="https://github.com/" target="_blank" aria-label="Ir a GitHub"><img src="/icons/github.svg" alt="icon-github"></a></li>
+          <li><a href="https://www.linkedin.com/in/braian-nu%C3%B1ez-34b284264/" target="_blank" aria-label="Ir a Linkedin"><img src="/icons/linkedin.svg" alt="icon linkedin"></a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
